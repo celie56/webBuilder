@@ -1,3 +1,9 @@
 
 # No swap files plz
 *.swp
+
+# no need to include the contents of the output folder
+output/*
+
+# or the settings
+settings.json

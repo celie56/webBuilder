@@ -23,7 +23,7 @@ ol{
     background-color: palegreen;
 }
 
-#pagesDrop {
+.dropbox {
     background-color: palegreen;
 }
 
@@ -32,11 +32,11 @@ ol{
     margin: 0;
     padding: 0;
 }
-#pagesDrop:empty:after {
+.dropbox:empty:after {
     content: "Drop pages here";
 }
 
-#pagesDrop li{
+.dropbox li{
     cursor: pointer;
     margin: 10px;
     padding: 10px;
@@ -44,10 +44,10 @@ ol{
     transition: opacity 0.4s ease-in-out 0s;
 }
 
-#pagesDrop li:nth-child(even){
+.dropbox li:nth-child(even){
 	background-color: #b7c2ff;
 }
 
-#pagesDrop li:nth-child(odd){
+.dropbox li:nth-child(odd){
 	background-color: #b2b2b2;
 }

@@ -3,40 +3,19 @@ ol{
     padding: 0;
 }
 
-.dropbox {
-	width: 90%;
-    min-height: 75px;
-    display: block;
-    background-color: rgb(255, 121, 121);
-    padding-left: 40px;
-}
-
-.dropbox div {
-    cursor: pointer;
-    margin: 10px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 0.4s ease-in-out 0s;
-}
-
 .good {
     background-color: palegreen;
 }
 
-.dropbox {
+.folderbox , .dropbox {
+	width: 90%;
+    min-height: 75px;
+    display: block;
+    padding-left: 40px;
     background-color: palegreen;
 }
 
-.dropbox:empty {
-    background-color: rgb(255, 121, 121);
-    margin: 0;
-    padding: 0;
-}
-.dropbox:empty:after {
-    content: "Drop pages here";
-}
-
-.dropbox li{
+.folderbox div , .dropbox div {
     cursor: pointer;
     margin: 10px;
     padding: 10px;
@@ -44,10 +23,32 @@ ol{
     transition: opacity 0.4s ease-in-out 0s;
 }
 
-.dropbox li:nth-child(even){
+.folderbox:empty , .dropbox:empty {
+    background-color: rgb(255, 121, 121);
+    margin: 0;
+    padding: 0;
+}
+
+.folderbox li , .dropbox li{
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s ease-in-out 0s;
+}
+
+.folderbox li:nth-child(even) , .dropbox li:nth-child(even){
 	background-color: #b7c2ff;
 }
 
-.dropbox li:nth-child(odd){
+.folderbox li:nth-child(odd) , .dropbox li:nth-child(odd){
 	background-color: #b2b2b2;
+}
+
+.dropbox:empty:after {
+    content: "Drop pages here";
+}
+
+.folderbox:empty:after {
+    content: "Drop folder here";
 }

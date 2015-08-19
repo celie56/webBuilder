@@ -1,5 +1,7 @@
-var app = require('app');  // Module to control application life.
-var BrowserWindow = require('browser-window');  // Module to create native browser window.
+// Module to control application life.
+var app = require('app');  
+// Module to create native browser window.
+var BrowserWindow = require('browser-window');  
 
 
 
@@ -21,7 +23,7 @@ app.on('window-all-closed', function() {
 // initialization and ready for creating browser windows.
 app.on('ready', function () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({ width: 450, height: 550 });
+  mainWindow = new BrowserWindow({ width: 450, height: 650 });
 
   mainWindow.setMenu(null);
 
@@ -29,7 +31,7 @@ app.on('ready', function () {
   mainWindow.loadUrl('file://' + __dirname + '/index.html');
 
   // Open the devtools.
-  mainWindow.openDevTools();
+  // mainWindow.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
